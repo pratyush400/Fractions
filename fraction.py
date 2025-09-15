@@ -28,3 +28,12 @@ class Fraction:
 
     def __float__(self):
         return self.num / self.deno
+
+    def __eq__(self, other):
+        return float(Fraction(self.num, self.deno)) == float(other)
+
+    def __le__(self, other):
+        return float(Fraction(self.num, self.deno)) <= float(other)
+    
+    def __ge__(self, other):
+        return float(Fraction(self.num, self.deno)) >= float(other)
