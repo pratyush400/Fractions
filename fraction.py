@@ -1,7 +1,7 @@
 __author__ = 'Emma, Jolie, Pratyush'
 
 from gcd import gcd
-# num = numerator; deno = denominator
+
 class Fraction:
     def __init__(self, num, deno):
         if deno == 0:
@@ -17,6 +17,13 @@ class Fraction:
     def __add__(self, other):
         return Fraction(self.num * other.deno + self.deno * other.num, self.deno*other.deno)
 
+    def __sub__(self, other):
+        return Fraction(self.num * other.deno - self.deno * other.num, self.deno*other.deno)
+
+    # __mul__
+
     def __truediv__(self, other):
         return Fraction(self.num*other.deno, self.deno*other.num)
 
+    def __float__(self):
+        return self.num / self.deno
