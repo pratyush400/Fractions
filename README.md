@@ -17,13 +17,13 @@ Define a class Fraction that represents a rational number with a numerator and a
 
 All of the methods you need to implement are magic methods:
 
-__init__
-__repr__
-__add__
-__sub__
-__mul__
-__truediv__
-__float__
+__init__-PJ
+__repr__-EH
+__add__-PJ
+__sub__-JN
+__mul__-EH
+__truediv__-PJ
+__float__-JN
 
 This is a team assignment. When you are done, one member of your team should submit the file, including (as a comment at the top of the file) the names of everyone who contributed.
 Files
